@@ -6,8 +6,7 @@ import time
 app = Flask(__name__)
 AUDIO_FOLDER = "static/audio"
 
-# Ensure the audio folder exists
-os.makedirs(AUDIO_FOLDER, exist_ok=True)
+os.makedirs(AUDIO_FOLDER, exist_ok=True)  # Ensure the audio folder exists
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
